@@ -1,0 +1,90 @@
+<!-- 3. ARIA Attributes
+
+Why it matters: ARIA (Accessible Rich Internet Applications) attributes provide extra information to assistive technologies, especially for dynamic or interactive elements that standard HTML cannot fully describe.
+How to use it:
+Common ARIA attributes include:
+aria-label (Adds a label where a visual label might be absent)
+aria-labelledby (Connects an element to a heading for labeling)
+aria-hidden (Hides elements from assistive technologies)
+Use ARIA attributes judiciously, and always research the correct application for each. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features Showcase</title>
+</head>
+<body>
+    <header>
+        <h1>Discover Amazing HTML5 Features</h1>
+        <nav>
+            <ul>
+                <li><a href="#semantic-elements">Semantic Structure</a></li>
+                <li><a href="#multimedia">Multimedia Support</a></li>
+                <li><a href="#form-input">Enhanced Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="semantic-elements">
+            <h2>Semantic Elements for Better Meaning</h2>
+            <p>HTML5 provides tags to clarify the content's purpose. This is better for both humans and screen readers:</p>
+            <ul>
+                <li><strong>&lt;header&gt;</strong>: Page or section introduction. </li>
+                <li><strong>&lt;nav&gt;</strong>: Navigation links. </li>
+                <li><strong>&lt;main&gt;</strong>: The primary page content. </li>
+                <li><strong>&lt;article&gt;</strong>: Self-contained pieces (like this one).</li>
+                <li><strong>&lt;footer&gt;</strong>: Bottom-of-page information.</li>
+            </ul>
+        </section>
+
+        <section id="multimedia">
+            <h2>Easy Multimedia with Video & Audio</h2>
+            <p>You no longer need plugins to embed media directly:</p>
+            <video src="/HTML/ASSIGNMENTS/assign4/assign4 problem 4/videoplayback.mp4" controls width="350"></video>
+            <audio controls>
+                <source src="HTML/ASSIGNMENTS/assign4/assign4 problem 4/ZAYN better.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            
+              </section>
+
+        <section id="form-input">
+            <h2>Forms With New Input Types</h2>
+            <p>Better user input and built-in validation! Try these:</p>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="birthdate">Birthday:</label>
+                <input type="date" id="birthdate" required>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer> 
+        <p>&copy; 2024 HTML5 Demo</p>
+    </footer>
+
+</body>
+</html>
+
+
+<!-- Explanation:
+
+<!DOCTYPE html>: Declares the document as HTML5.
+<html>: The root element of your page.
+<head>: Contains metadata like the <title>.
+<body>: Houses the visible content.
+<div role="dialog" aria-modal="true" aria-labelledby="dialog-title">: Simulates a dialog box (modal) and helps screen readers understand its function.
+<h2 id="dialog-title">: Title for the dialog, connected to the dialog via aria-labelledby.
+<p>: Dialog content.
+<button aria-label="Close Dialog">X</button>: Your button with a descriptive label for screen readers.
+Important Notes:
+
+This is a very basic structure. A real dialog usually involves JavaScript to handle opening/closing and focus management for a better user experience.
+CSS is highly recommended to achieve proper visual styling, layout, and positioning for the dialog. -->
